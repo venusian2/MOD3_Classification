@@ -1,6 +1,6 @@
 # Mod 3 Classification Project
 
-DSC NYC Flatiron Module 2 Project
+DSC NYC Flatiron Module 3 Project
 By: **Jason Drummond and Muriel Kosaka**
 
 ## Goal
@@ -75,12 +75,3 @@ We were able to create a model using a Voting Classifier bundling the KNN, Logsi
 
 ## Use Case Insights
 
-* There has been a rise in Average Salary every year in the dataset 
-* If you wanted to Retire Early the best Agencies to go into are as follows
-  * Police Department
-  * Department of Education
-  * Fire Department
-* If you want to be in the Top earning Agencies focus on jobs in the folloowing Agencies
-  * Office Of Colletive Bargaining
-  * Financial Info Svcs Agency
-  * Office of the Actuary
