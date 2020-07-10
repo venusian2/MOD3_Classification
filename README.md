@@ -77,7 +77,7 @@ We were able to create a model using a Voting Classifier bundling the KNN, Logsi
 
 ## Use Case Insights
 
-* Education level, Age, Gender, Hours worked per week, as well as occupations in the Management, Business, Science & Art Fields have the influence on predicting 
+* Education level, Age, Gender, Hours worked per week, as well as occupations in the Management, Business, Science & Art Fields have the highest influence on predicting 
 if a person will make over the median income.
 * As a policy maker you can focus on variables such as Gender and Education Level to produce the largest increase in these groups making over the median income 
 by providing resources for these types of individuals
