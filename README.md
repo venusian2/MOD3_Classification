@@ -75,3 +75,10 @@ We were able to create a model using a Voting Classifier bundling the KNN, Logsi
 
 ## Use Case Insights
 
+* Education level, Age, Gender, Hours worked per week, as well as occupations in the Management, Business, Science & Art Fields have the influence on predicting 
+if a person will make over the median income.
+* As a policy maker you can focus on variables such as Gender and Education Level to produce the largest increase in these groups making over the median income 
+by providing resources for these types of individuals
+ * For people with lower Education Levels you can provide low or no interest loans to make it easier for people to enter into higher education or provide reduced costs for these individuals
+ * For Gender policy makers can create grants for women to enter into idustries where there is a large gender bias.
+ * 
