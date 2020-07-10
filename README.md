@@ -32,22 +32,22 @@ There were many things that needed to be cleaned up in our Dataset. First we dro
 After conducting a chi square test on Sex and Income, we found a significant difference between men and women. Men are significantly more likely to earn over the 
 median income as compared to women
 
-
+![](Sex_v_Income.png)
 
 After performing an independent samples t-test on Age and Income, we found a significant difference. Those who earn more than the median are significantly older 
 than those who are not.
 
-
+![](Age_v_Income.png)
 
 We performed an independent samples t-test on Hours Worked Per Week vs. Income and found a significant difference. Those who earn more than the median amount 
 worked significantly more hours per week than those who make less than the median.
 
-
+![](Hrs_v_Income.png)
 
 We performed a chi square test on Education vs Income and found a significant difference. Post-hoc tests revealed that those who have a Doctorate, Master’s, or a 
 Professional School Degree earn more than the median.
 
-
+![](Educ_v_Income.png)
 
 ## Feature Engineering
 
@@ -62,9 +62,9 @@ We created four different classification models, a logistic, a KNN, a Decision T
 
 ## Conclusion
  
-(Distribtion_Plot.png)
+![](ROC_Final.png)
 
-(Probability_Plot.png)
+![](confusin_matrix.png)
 
 We were able to create a model using a Voting Classifier bundling the KNN, Logsitic, Decision Tree, and Random Forest models that produced a model with an F-1 score of .6680 and an accuracy score of .7850. The baseline accuracy, if we were just to choose the majority class for all datapoints, was .7005 for our dataset, utilizing the Voting Classifier model we are able to increase that accuracy by 12 percent.
 
