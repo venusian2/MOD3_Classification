@@ -5,7 +5,7 @@ By: **Jason Drummond and Muriel Kosaka**
 
 ## Goal
 
-Create a classification model that will correctly predict whether a person will make over median income based on different attributes.
+Create a classification model that will correctly predict whether a person will make over the median income based on different attributes.
 
 ## Use Case
 
@@ -14,18 +14,21 @@ As a policy maker you would like to know where to allocate resources or create p
 ## DataSet
 
 Our original data set came from the UCI Machine Learning Repository website, (https://archive.ics.uci.edu/ml/datasets/Adult). This Datset was deemed to be too 
-outdated as it was over 205 years old. We extracted the same data along with new variables from the following website, (https://cps.ipums.org/cps/) 
+outdated as it was from over 25 years ago. We extracted the same data along with new variables from the following website, (https://cps.ipums.org/cps/) 
 
-There were over 180,000 rows in our Dataset depicting the salaries for people participating in the Census Bureaus CPS Survey for the year 2018. It is our goal to 
-see what factors contribute most to a persons Income.
-
+There were over 180,000 rows in our Dataset depicting the salaries for people participating in the Census Bureau's CPS Survey for the year 2018. It is our goal 
+to see what factors contribute most to a persons income.
 
 
 ## Data Cleaning
 
-There were many things that need to be cleaned up in our Dataset. First we had to recode columns, using a Data Dictionary, to get a better understanding of what each one represented. We
+There were many things that need to be cleaned up in our Dataset. First we had to recode columns, using a Data Dictionary, to get a better understanding of what 
+was being represented. We noticed that there were about 40,000 rows that were missing our target variable of income so we had to delete all of those from the 
+dataset. We noticed that there were another 40,000 or so rows that had a lot of missing data in various columns, we feel this is a result of people not taking 
+the questionaire seriously and only filling out information that they felt comfortable releasing, we wound up deleting these rows from our data frame as well. 
+The last column that we had to deal with was the amount of hours people worked, we wanted to limit our search to only people that were currently employed thus 
+deleting anyone that worked 0 hours. This Data cleanning process left us with about 100,000 datapoints which is still good enough to make a model with.
 
-There were many things that needed to be cleaned up in our Dataset. First we dropped Fiscal Year 2014 from our dataset as it had very little data to use. We then created a new column to explore any relationhip between number of years worked for city and Salary. Upon investigating the Data for Teachers I found bi problem that needed to be fixed. Whenever a Teacher does extracurricular work they get paid per session and this shows up in an entirely different row from their yearly salary. I took all the money they made from this row and addded it in as OT in their respective yearly salary row. This one step got rid of a big chink of Data as teachers are one of the most common jobs in NYC. From here I fixed all of the Agency Names to reflect the overarching Agency that they belong to, as some were broken down into smaller components, mainly Community Board, Department of Eduaction, and District Attorney. The last step was getting rid of anyone that was not a full time workker as we only wanted to focus on this group.
 
 ## Statistical Tests
 
@@ -51,10 +54,12 @@ Professional School Degree earn more than the median.
 
 ## Feature Engineering
 
-This was the biggest limitation to this DataSet. We could not create too many features as a majority of the Data was categorical or binary. We did look at percentages of people making over the median income in the following areas, age, race, 
-
-
-We were able to create a feature pertaining to how many years the person worked for the City. Other than that we mainly had to work with Dummy variables, we created them for all of the different agencies. Upon looking at all the different jobs in the Title Description column we had to limit dummy variables as it the amount would overload the OLS model and not output a model. To make a good model based on this data we created dummy variables for all of the Title Descriptions and then looped through all of them and found the Jobs that gave us the highest R_squared value when compared to Salary and added them in to our model. This greatly boosted the R_squared of our model.
+This was the biggest limitation to this DataSet. We could not create too many features as a majority of the Data was categorical or binary. We did look at 
+percentages of people making over the median income in the following areas, Age, Race, Marital Status, ASECwt, and Education as to try and figure out the best 
+way to bin each variable. Other than that we mainly had to work with dummy variables, we created dummy variables for Education level, Work class, Race,
+Occupation, Industry, Birthplace, and Family Relation. After looking at the sheer amount of different dummy variables that would have been created for occupation 
+and industry we decided to group these using the general heading for each different occupation and industry type in the data dictionary so we did not overload 
+our system.
 
 ## Classification Models
 
