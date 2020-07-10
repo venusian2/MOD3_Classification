@@ -67,7 +67,7 @@ We created four different classification models, a logistic, a KNN, a Decision T
 
 ## Conclusion
  
-![](ROC_Final.png)
+![](/images/ROC_Final.png)
 
 ![](confusin_matrix.png)
 
