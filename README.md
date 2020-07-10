@@ -79,6 +79,5 @@ We were able to create a model using a Voting Classifier bundling the KNN, Logsi
 if a person will make over the median income.
 * As a policy maker you can focus on variables such as Gender and Education Level to produce the largest increase in these groups making over the median income 
 by providing resources for these types of individuals
- * For people with lower Education Levels you can provide low or no interest loans to make it easier for people to enter into higher education or provide reduced costs for these individuals
- * For Gender policy makers can create grants for women to enter into idustries where there is a large gender bias.
- * 
+ * For people with lower Education Levels, you can provide low or no interest loans to make it easier for people to enter into higher education or provide reduced costs for these individuals
+ * For Gender, policy makers can create grants for women to enter into idustries where there is a large gender bias.
