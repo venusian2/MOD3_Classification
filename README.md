@@ -3,7 +3,7 @@
 DSC NYC Flatiron Module 3 Project
 By: **Jason Drummond and Muriel Kosaka**
 
-## Prewsntation Link (https://docs.google.com/presentation/d/1RYuTh9dFPOzJo0IkjLOwL0ptJ_eTNzYKQgWviHJQvaQ/edit#slide=id.g8b57e1b895_0_188)
+## Presentation Link (https://docs.google.com/presentation/d/1RYuTh9dFPOzJo0IkjLOwL0ptJ_eTNzYKQgWviHJQvaQ/edit#slide=id.g8b57e1b895_0_188)
 
 ## Goal
 
